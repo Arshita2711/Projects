@@ -18,6 +18,7 @@ Before you begin, ensure you have Node.js and npm installed on your machine.
     cd event-management-react
 2.Install the dependencies :
     npm install
+    
 Running the Application :
 To run the application locally, use the following command:
     npm start
