@@ -16,10 +16,12 @@ Before you begin, ensure you have Node.js and npm installed on your machine.
    
 1.Navigate to the project directory:
     cd event-management-react
+    
 2.Install the dependencies :
     npm install
     
 Running the Application :
 To run the application locally, use the following command:
     npm start
+    
 This will start the development server, and you can access the application at http://localhost:3000 in your web browser.
