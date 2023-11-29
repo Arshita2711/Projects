@@ -1,0 +1,134 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out; /* Adding a subtle box-shadow transition */
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out; /* Adding a smooth color transition */
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+input[type='checkbox'] {
+  margin-right: 5px;
+}
+
+.error {
+  color: #d9534f;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.success {
+  color: #5cb85c;
+  margin: 15px 0;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Adding a smooth background color transition */
+}
+
+button:hover {
+  background-color: #555;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ffc107;
+}
+
+@media (max-width: 600px) {
+  input,
+  select,
+  button {
+    width: 100%;
+  }
+}
+#eventOptions {
+  display: flex;
+  align-items: center;
+}
+
+#eventOptions label {
+  margin-right: 20px; /* Adjust the margin as needed */
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.5s forwards ease-out; /* Adding a slide-in animation */
+
+  /* Additional styling for checkbox and label */
+  display: flex;
+  align-items: center;
+}
+
+#eventOptions input[type='checkbox'] {
+  margin-right: 5px;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
